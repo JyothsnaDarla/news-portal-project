@@ -1,0 +1,46 @@
+/* newsportal_frontEnd/src/index.css */
+
+/* --- MANDATORY TAILWIND DIRECTIVES --- */
+/* These three lines are essential for Tailwind classes (e.g., bg-red-600) to work. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* -------------------------------------- */
+
+
+/* --- GLOBAL STYLES --- */
+
+/* Apply a clean font and background to the whole application body */
+body {
+  font-family: 'Arial', 'Noto Sans Devanagari', sans-serif; /* Added Devanagari font for better Hindi display */
+  background-color: #f0f2f5; /* Light, neutral background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+}
+
+/* Ensure the root element fills the space */
+#root {
+  min-height: 100vh;
+}
+
+
+/* --- CUSTOM COMPONENTS/UTILITIES --- */
+
+/* Custom class for the Article Card for a subtle visual lift on hover */
+.article-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.article-card:hover {
+    transform: translateY(-4px); /* Lifts the card slightly */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Adds a stronger shadow */
+}
+
+/* Optional: Style for the main container wrapper */
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

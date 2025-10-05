@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Django static and media
+staticfiles/
+media/
+
+# Local settings and secrets
+*.env
+.env.local
+*.secret.json
+
+# React build and dependencies
+node_modules/
+build/
+dist/
+yarn.lock
+package-lock.json
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
